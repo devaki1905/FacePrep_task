@@ -1,0 +1,56 @@
+body{
+  background-image: url(534fb96198bf3d539922c83120651943.png);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  
+
+}
+.name-list {
+    margin-top: 20px;
+    font-family:cursive;
+    font-weight: 300;
+    font-size: larger;
+  }
+  
+  .name-card {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    background-image: url('panda.jpg'); /* Replace with your image URL */
+    background-size: cover;
+  }
+  
+  .name-card p {
+    margin: 0;
+  }
+  /* .div {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  } */
+  
+
+  
+  .logout-btn {
+    padding: 10px 20px;
+    background-color: #f75077;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  
