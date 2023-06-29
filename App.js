@@ -5,7 +5,6 @@ import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import './App.css';
 
 
-// Polyfill for 'useEffect' and 'useState'
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 
@@ -36,7 +35,7 @@ function App() {
     {
       loading ? (
         <ClimbingBoxLoader
-          color={"#FF0000"} // Replace with your desired color
+          color={"#FF0000"}
           loading={loading}
           size={10} />
       ) : 
