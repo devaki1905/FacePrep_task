@@ -1,4 +1,3 @@
-// HomePage.js
 import React from 'react';
 import './HomePage.css';
 import  { useState, useEffect } from 'react';
@@ -55,66 +54,12 @@ const allNames = [
   'Uma Maheshwara',
   'Vaidyanatha',
   'Yogeshwara'
-  
-];
-// function HomePage({ handleLogout }) {
-//   const [names, setNames] = useState([]);
-//   const [displayedNames, setDisplayedNames] = useState(10); // Number of names to display initially
-//   const [isLoading, setIsLoading] = useState(true);
 
-//   useEffect(() => {
-//     // Simulate an asynchronous API call to fetch data
-//     setTimeout(() => {
-//       const partialNames = allNames.slice(0, displayedNames);
-//       setNames(partialNames);
-//       setIsLoading(false);
-//     }, 3000);
-//   }, [displayedNames]);
-
-//   const handleScroll = () => {
-//     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-//     const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
-//     if (scrollTop + windowHeight >= document.documentElement.scrollHeight - 200) {
-//       // Load more names when user reaches near the end of the page
-//       setDisplayedNames((prevDisplayedNames) => prevDisplayedNames + 10);
-//     }
-//   };
-
-//   useEffect(() => {
-//     window.addEventListener('scroll', handleScroll);
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
-
-//   return (
-//     <div><h1>Home Page</h1>
-        
-//       <div className="name-list">
-//         {isLoading ? (
-//           <p>Loading...</p>
-//         ) : (
-//           names.map((name, index) => (
-//             <div key={index} className="name-card">
-//               <div className="profile-image"></div>
-//               <p>{name}</p>
-//             </div>
-//           ))
-//         )}
-//                 <button className="logout-btn" onClick={handleLogout}>Logout</button>
-
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default HomePage;
 
 
 function HomePage({ handleLogout }) {
   const [names, setNames] = useState([]);
-  const [displayedNames, setDisplayedNames] = useState(5); // Number of names to display initially
+  const [displayedNames, setDisplayedNames] = useState(5); 
   const [isLoading, setIsLoading] = useState(true);
   const [isScrollLoading, setIsScrollLoading] = useState(false);
 
@@ -130,7 +75,6 @@ function HomePage({ handleLogout }) {
   };
 
   useEffect(() => {
-    // Simulate an asynchronous API call to fetch data
     setTimeout(() => {
       const partialNames = allNames.slice(0, displayedNames);
       setNames(partialNames);
@@ -143,7 +87,7 @@ function HomePage({ handleLogout }) {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [handleScroll]); // Include handleScroll in the dependency array
+  }, [handleScroll]); 
 
   useEffect(() => {
     if (!isLoading) {
