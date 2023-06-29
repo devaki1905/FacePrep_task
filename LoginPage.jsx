@@ -1,6 +1,4 @@
-// LoginPage.js
 import React, { useState } from 'react';
-//import './styles.css'
 
 function LoginPage({ handleLogin }) {
   const [username, setUsername] = useState('');
