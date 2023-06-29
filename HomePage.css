@@ -29,18 +29,14 @@ body{
     height: 50px;
     border-radius: 50%;
     background-color: gray;
-    background-image: url('panda.jpg'); /* Replace with your image URL */
+    background-image: url('panda.jpg'); 
     background-size: cover;
   }
   
   .name-card p {
     margin: 0;
   }
-  /* .div {
-    width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  } */
+
   
 
   
